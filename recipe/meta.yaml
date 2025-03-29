@@ -1,5 +1,5 @@
 {% set name = "llama-cloud-services" %}
-{% set version = "0.6.8" %}
+{% set version = "0.6.9" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/llama_cloud_services-{{ version }}.tar.gz
-  sha256: 572c2b955bbf8ba2bbd5ec80d5fbdb92185fd9a4f8134b82a87ac43165d47732
+  sha256: aa3ba309f64723abd30b8fbb2dd99349d616cc79e09e37c52e10a69e84fe8d48
 
 build:
   noarch: python
@@ -22,9 +22,10 @@ requirements:
     - poetry-core
     - pip
   run:
+    - platformdirs >=4.3.7,<5.0.0
     - python >={{ python_min }}
     - llama-index-core >=0.11.0
-    - llama-cloud >=0.1.16,<0.2.0
+    - llama-cloud >=0.1.17,<0.2.0
     - pydantic !=2.10
     - click >=8.1.7,<9.0.0
     - python-dotenv >=1.0.1,<2.0.0
