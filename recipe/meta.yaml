@@ -1,5 +1,5 @@
 {% set name = "llama-cloud-services" %}
-{% set version = "0.6.29" %}
+{% set version = "0.6.30" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/llama_cloud_services-{{ version }}.tar.gz
-  sha256: 8f44143434aacf5fff5346f67f7d5d57a926348b6c4c9885d326c4fda5290ac2
+  sha256: 2cb5004d13127aac52888ae9b3d70f899d598633520b2a2542bb62682d08d776
 
 build:
   noarch: python
