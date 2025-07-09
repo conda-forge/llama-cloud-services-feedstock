@@ -26,7 +26,7 @@ requirements:
     - platformdirs >=4.3.7,<5.0.0
     - python >={{ python_min }}
     - llama-index-core >=0.12.0
-    - llama-cloud ==0.1.32
+    - llama-cloud ==0.1.33
     - pydantic >=2.8,!=2.10
     - click >=8.1.7,<9.0.0
     - python-dotenv >=1.0.1,<2.0.0
