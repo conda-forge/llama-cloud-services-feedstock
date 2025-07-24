@@ -3,7 +3,7 @@ About llama-cloud-services-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/llama-cloud-services-feedstock/blob/main/LICENSE.txt)
 
-Home: https://docs.cloud.llamaindex.ai
+Home: https://docs.cloud.llamaindex.ai/
 
 Package license: MIT
 
