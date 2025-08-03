@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: llama-cloud-services
-  version: "0.6.53"
+  version: "0.6.54"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/llama_cloud_services-${{ version }}.tar.gz
-  sha256: ee3f0df2d46c2a96958adaca6b7407861315709a892158f07c7f1bd34bf788b3
+  sha256: baf65d9bffb68f9dca98ac6e22908b6675b2038b021e657ead1ffc0e43cbd45d
 
 build:
   number: 0
@@ -23,7 +23,7 @@ build:
 requirements:
   host:
     - python ${{ python_min }}.*
-    - poetry-core
+    - hatchling
     - pip
   run:
     - tenacity >=8.5.0,<10.0
