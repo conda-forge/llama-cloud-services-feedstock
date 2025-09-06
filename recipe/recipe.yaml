@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: llama-cloud-services
-  version: "0.6.63"
+  version: 0.6.64
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/llama_cloud_services-${{ version }}.tar.gz
-  sha256: a6019bd98be5cf5960d581d742b39567cdf3e255578a9dfcce2b0299f8e3c962
+  sha256: cfba9a71b84751ec3368d2b4487b515497ef28248c4ee524b238eb4caec6af1c
 
 build:
   number: 0
@@ -30,7 +30,7 @@ requirements:
     - platformdirs >=4.3.7,<5
     - python >=${{ python_min }}
     - llama-index-core >=0.12.0
-    - llama-cloud ==0.1.37
+    - llama-cloud ==0.1.41
     - pydantic >=2.8,!=2.10
     - click >=8.1.7,<9
     - python-dotenv >=1.0.1,<2
