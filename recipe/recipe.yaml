@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: llama-cloud-services
-  version: "0.6.76"
+  version: "0.6.77"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/llama_cloud_services-${{ version }}.tar.gz
-  sha256: 82d71525bc577a3b5bb074c80cd32440b4862d831cbbabb97e5bfd86b0c43276
+  sha256: 8deae219e7601d51e052892852f18fe6a7c51e65acb5ca4fc72ede3ed45ebe47
 
 build:
   number: 0
